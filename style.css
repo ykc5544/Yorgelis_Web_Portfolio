@@ -70,3 +70,10 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+main {
+    display: flex;
+    flex-direction: column; /*sections on top of each other*/
+    align-items: center;/*cenetr sections*/
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}

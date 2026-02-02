@@ -1,0 +1,164 @@
+<!--
+name: Yorgelis Castillo Borges
+Student ID: 943515153
+Course Name: IST 256
+Assignment: ASG-L1: HTML5 Portfolio Page Assignment
+Submission Date: 1/25/2026
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a personal webpage to show my skills, and for an assignment.">
+    <meta name="author" content="Yorgelis Castillom Borges">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Portfolio">
+    <title>Yorgelis Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="avatar.jpg" alt="Profile Picture" width="150" height="150">
+        <h1>Yorgelis Castillo Borges</h1>
+    </header>
+
+
+
+    <main> 
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <h3>Background</h3>
+                <p>My name is <mark>Yorgelis Castillo</mark>. I am a student at Penn State</p>
+                <p> I plan to graduate on <time datetime="2027-01-01">2027</time>.</p>
+            </article>
+
+            <article>
+                <h3>Interests</h3>
+                <p>I enjoy playing video games such as marvel rivals and fifa. I also like to go rock climbing and watch movies.</p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <article>
+                <h3>Programming Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>Java</li>
+            </ul>
+            </article>
+        
+
+            <article>
+                <h3>Proficiency</h3>
+                         <table>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Proficiency Level</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">HTML5</th>
+                        <td>Intermediate</td>
+                    </tr>
+                      <tr>
+                        <th scope="row">Python</th>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">C#</th>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Java</th>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>Project 1:Favorite Artist Website</h3>
+                <img src="project1.png" alt="Screenshot of Personal Website" width="300" height="200" loading="lazy">
+                <p>Developed a website using HTML and CSS to showcase my favorite artist and skills.</p>
+                <details> 
+                <summary>View More Details</summary>
+                <p>Additional information about the projects can be found here.</p>
+                </details>
+            </article>
+
+            <article>
+                <h3>Project 2: Game Development</h3>
+                <img src="project2.png" alt="Screenshot of Game" width="300" height="200">
+                <p>Created a simple 2D game using C# and Unity as part of a Jam.</p>
+                <details> 
+                <summary>View More Details</summary>
+                <p>Additional information about the projects can be found here.</p>
+                </details>
+            </article>
+
+            <article>
+                <h3>Video</h3>
+               <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+
+            </article>
+            </section>
+
+    </section>
+
+    <aside>
+        <h2>Quick Facts</h2>
+        <dl>
+            <dt>Hobby:</dt>
+            <dd>Rock Climbing</dd>
+
+            <dt>Favorite Language:</dt>
+            <dd>C#</dd>
+
+            <dt>Dream Job:</dt>
+            <dd>App developmer</dd>
+        </dl>
+    </aside>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:yorgeliscastillo92@gmail.com" method="post">
+        <fieldset>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+        <p>Email: yorgeliscastillo92@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    </main>
+</body> 
+</html>
