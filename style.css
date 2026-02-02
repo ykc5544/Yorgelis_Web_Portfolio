@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-color: #333;
+    --background-color: #f4f4f4;
+}
+
+header {
+    position: relative;            
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+/* on hover */
+header:hover {
+    background: rgba(255, 255, 255, 0.8); 
+    color: #000;
+}
+
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 10px;
+}
+
