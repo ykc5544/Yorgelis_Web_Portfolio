@@ -40,3 +40,33 @@ header h1 {
     margin-bottom: 10px;
 }
 
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: color 0.6s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
