@@ -77,3 +77,45 @@ main {
     gap: var(--space-lg);
     margin-top: var(--space-lg);
 }
+
+section {
+    width: 100%;
+    max-width: 1200px;/* section width*/
+    background: #fff;
+    padding: var(--space-lg);
+    border-radius: var(--radius);
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/*styles the contact form*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+input,
+textarea,
+button {
+    padding: var(--space-sm);
+    border-radius: var(--radius);
+    border: 1px solid #ccc;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+/* button hover effect */
+button:hover {
+    background-color: var(--secondary-color);
+}
