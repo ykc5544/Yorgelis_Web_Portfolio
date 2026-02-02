@@ -1,3 +1,11 @@
+/*
+name: Yorgelis Castillo Borges
+Student ID: 943515153
+Course Name: IST 256
+Assignment: ASG-L2: HTML5 Portfolio Page Assignment
+Submission Date: 2/1/2026
+
+*/
 * {
     margin:0;
     padding:0;
@@ -118,4 +126,37 @@ button {
 /* button hover effect */
 button:hover {
     background-color: var(--secondary-color);
+}
+
+/* makes tables full width */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: var(--space-sm);
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #ebe8e8;
+}
+/* handles animation and responsive web design */ 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+section {
+    animation: fadeIn 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: var(--space-md);
+    }
+    header h1 {
+        font-size: 1.2rem;
+    }
 }
