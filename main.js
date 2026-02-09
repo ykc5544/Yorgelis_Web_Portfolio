@@ -18,3 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
         alert("That's definitely me:)");
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const projectImg = document.querySelectorAll('#projects img');
+
+    projectImg.forEach(img => {
+        img.addEventListener('mouseenter', () => {
+            img.style.transform = 'scale(1.1)';
+            img.style.transition = 'transform 0.3s ease, border 0.3s ease';
+        });
+        
+        img.addEventListener('mouseleave', () => {
+            img.style.transform = 'scale(1)';
+            img.style.border = 'none';
+        });
+    });
+});
