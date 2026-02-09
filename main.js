@@ -10,3 +10,11 @@ const skills = document.querySelector('#skills ul');
 toggleSkillSection.addEventListener('click', () => {
     skills.style.display = skills.style.display === 'none' ? 'block' : 'none';
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const avatar = document.getElementById('avatar');
+
+    avatar.addEventListener('click', () => {
+        alert("That's definitely me:)");
+    });
+});
