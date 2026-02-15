@@ -19,6 +19,9 @@ body {
     color: #333;
     padding: 20px;
 }
+body {
+    min-height: 200vh;
+}
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
