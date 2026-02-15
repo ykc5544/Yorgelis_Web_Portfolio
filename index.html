@@ -17,6 +17,8 @@ Submission Date: 1/25/2026
     <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Portfolio">
     <title>Yorgelis Website</title>
     <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
 </head>
 <body>   
@@ -51,50 +53,69 @@ Submission Date: 1/25/2026
             </article>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <article>
-                <h3><button id="tog-skill">Toggle Skills</button>Programming Languages</h3>
-            <ul>
-                <li>HTML</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>Java</li>
-            </ul>
-            </article>
-        
+      <section id="skills">
+  <h2>Skills</h2>
+  <div class="accordion" id="accordionSkills">
 
-            <article>
-                <h3>Proficiency</h3>
-                         <table>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="languages">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLanguages" aria-expanded="true" aria-controls="collapseLanguages">
+          Programming Languages
+        </button>
+      </h2>
+      <div id="collapseLanguages" class="accordion-collapse collapse show" aria-labelledby="headingLanguages" data-bs-parent="#skillsAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>C#</li>
+            <li>Java</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Skill</th>
-                        <th scope="col">Proficiency Level</th>
-                    </tr>
-                </thead>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="proficiency
+      ">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProficiency" aria-expanded="false" aria-controls="collapseProficiency">
+          Proficiency
+        </button>
+      </h2>
+      <div id="collapseProficiency" class="accordion-collapse collapse" aria-labelledby="headingProficiency" data-bs-parent="#skillsAccordion">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Proficiency Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HTML5</th>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">Python</th>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">C#</th>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <th scope="row">Java</th>
+                <td>Intermediate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
-                <tbody>
-                    <tr>
-                        <th scope="row">HTML5</th>
-                        <td>Intermediate</td>
-                    </tr>
-                      <tr>
-                        <th scope="row">Python</th>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">C#</th>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Java</th>
-                        <td>Intermediate</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+  </div>
+</section>
 
         <section id="projects">
             <h2>Projects</h2>
@@ -125,8 +146,6 @@ Submission Date: 1/25/2026
 
             </article>
             </section>
-
-    </section>
 
     <aside>
         <h2>Quick Facts</h2>
