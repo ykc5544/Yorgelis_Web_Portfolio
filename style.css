@@ -104,6 +104,25 @@ aside h2 {
     padding-bottom: 5px;
 }
 
+#projects article {
+    background-color: #f9f9f9;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    transition: 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+#projects img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
 
 /*styles the contact form*/
 form {
