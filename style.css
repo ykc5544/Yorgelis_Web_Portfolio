@@ -177,6 +177,29 @@ td {
 tr:nth-child(even) {
     background-color: #ebe8e8;
 }
+aside {
+    background-color: #565656;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+aside h2 {
+    margin-bottom: 16px;
+}
+
+aside dl {
+    display: grid;
+    row-gap: 10px;
+}
+
+aside dt {
+    font-weight: bold;
+}
+
+aside dd {
+    margin-left: 10px;
+}
 
 /* handles animation and responsive web design */ 
 @keyframes fadeIn {
