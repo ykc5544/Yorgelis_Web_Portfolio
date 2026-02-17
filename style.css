@@ -72,6 +72,12 @@ nav ul li a {
 nav ul li a:hover {
     color: var(--primary-color);
 }
+nav {
+    background: white;
+    padding: var(--space-md);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
 
 .header-image img {
     border-radius: 50%;
