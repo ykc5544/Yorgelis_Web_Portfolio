@@ -82,22 +82,28 @@ nav ul li a:hover {
 }
 
 main {
-    display: flex;
-    flex-direction: column; /*sections on top of each other*/
-    align-items: center;/*cenetr sections*/
+    max-width: 1100px;
+    margin: auto;
+    padding: var(--space-lg);
+    display: grid;
     gap: var(--space-lg);
-    margin-top: var(--space-lg);
 }
 
-section {
-    width: 100%;
-    max-width: 1200px;/* section width*/
-    background: #fff;
+section, aside {
+    background: white;
     padding: var(--space-lg);
     border-radius: var(--radius);
-    border-bottom: 4px solid var(--primary-color);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
 }
+
+section h2,
+aside h2 {
+    margin-bottom: var(--space-md);
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
 
 /*styles the contact form*/
 form {
@@ -146,6 +152,7 @@ td {
 tr:nth-child(even) {
     background-color: #ebe8e8;
 }
+
 /* handles animation and responsive web design */ 
 @keyframes fadeIn {
     from { opacity: 0; }
