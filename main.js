@@ -37,3 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+window.addEventListener("scroll", function() {
+    const nav = document.querySelector("nav");
+    if (window.scrollY > 50) {
+        nav.classList.add("sticky-header");
+    } else {
+        nav.classList.remove("sticky-header");
+    }
+});
+
