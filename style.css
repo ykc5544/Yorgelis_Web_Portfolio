@@ -23,6 +23,14 @@ body {
     min-height: 200vh;
 }
 
+.page-section {
+    display: none;
+}
+
+.page-section.active-section {
+    display: block;
+}
+
 :root {
     --primary-color: #3498db;
     --secondary-color: #2ecc71;

@@ -46,3 +46,29 @@ window.addEventListener("scroll", function() {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const links = document.querySelectorAll("nav ul li a");
+    const sections = document.querySelectorAll(".page-section");
+
+    document.querySelector("#about").classList.add("active-section");
+
+    links.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            sections.forEach(section => {
+                section.classList.remove("active-section");
+            });
+
+            links.forEach(l => l.classList.remove("active"));
+
+            const targetId = link.getAttribute("href").substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            targetSection.classList.add("active-section");
+            link.classList.add("active");
+        });
+    });
+});
