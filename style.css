@@ -143,7 +143,7 @@ aside h2 {
     align-items: flex-start;
     flex-wrap: wrap;
 }
-#about {
+#about.active-section {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
@@ -153,13 +153,12 @@ aside h2 {
     flex: 2;
 }
 
-.about-aside {
-    flex: 1;
-    background-color: #f0f0f0;
+#about aside {
+    background: #f8f9fa;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
-
 #projects article {
     background-color: #f9f9f9;
     padding: 16px;
