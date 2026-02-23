@@ -122,6 +122,7 @@ main {
     gap: var(--space-lg);
 }
 
+
 section, aside {
     background: white;
     padding: var(--space-lg);
@@ -135,6 +136,28 @@ aside h2 {
     border-bottom: 2px solid var(--primary-color);
     display: inline-block;
     padding-bottom: 5px;
+}
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+.about-main {
+    flex: 2;
+}
+
+.about-aside {
+    flex: 1;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #projects article {
